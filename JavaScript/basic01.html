@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<h1 id="header">Hppy New Year 2018</h1>
+
+	<input type="text" id="radius_txt"></input>
+	<button id="calculate_btn">Calculate</button>
+</body>
+<script>
+		alert('I can help you with math')
+		//header.style.color = 'ForestGreen' ;
+		document.getElementById('header').style.color = 'Red' ;
+		header.style.backgroundColor = 'ForestGreen' ;
+		
+
+
+		var number01 = 2 + 8 ;
+		var number02 = Math.PI * (10 ** 2) ;
+
+		console.log(number01) ;
+		console.log(number02) ;
+
+		with (radius_txt.style)
+		{
+				color = 'Grey' ; 
+				fontSize = '2em' ; 
+				width = '300px'
+		}
+
+		with (calculate_btn.style)
+		{
+				color = 'DarkBlue' ; 
+				fontSize = '2em' ; 
+				width = '150px'
+		}
+
+		calculate_btn.addEventListener('click', calculate) ; 
+		function calculate ()
+		{
+				var result = 0 ;
+				var r = Number(radius_txt.value) ; 
+
+				result = Math.PI * r ** 2 ;
+
+				console.log(result) ;
+		}
+</script>
+
+</html>
